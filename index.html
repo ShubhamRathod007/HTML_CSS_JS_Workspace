@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dodge — Simple Game</title>
+  
+</head>
+<body>
+  <div class="wrap">
+    <div class="game-panel">
+      <h1>Dodge — move and avoid the falling blocks</h1>
+      <canvas id="game" width="800" height="600"></canvas>
+      <div style="margin-top:10px;display:flex;gap:8px;align-items:center;">
+        <button id="startBtn" class="btn">Start</button>
+        <button id="pauseBtn" class="btn" style="background:linear-gradient(180deg,#f97316,#fb923c)">Pause</button>
+        <div style="margin-left:auto;color:var(--muted)">High score: <span id="high">0</span></div>
+      </div>
+    </div>
+    <aside class="sidebar">
+      <div class="stat"><div>Score</div><div id="score">0</div></div>
+      <div class="stat"><div>Level</div><div id="level">1</div></div>
+      <div class="stat"><div>Lives</div><div id="lives">3</div></div>
+      <div class="controls">
+        <div style="margin-bottom:8px">Controls</div>
+        <div class="hint">Left / Right arrows or A / D to move.</div>
+        <div class="hint">On touch devices: tap left or right side of the game area to move.</div>
+      </div>
+      <div class="footer">Avoid the falling blocks. Score increases over time and for each avoided block. Game speeds up with level.</div>
+    </aside>
+  </div>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  
+</body>
+</html>
